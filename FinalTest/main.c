@@ -93,7 +93,7 @@ void view_library(struct st_book* list[], int n){
 		printf("%d년 / ", list[i]->year);
 		printf("%s ", STATUS[list[i]->status]);
 		if(list[i]->status==2) printf("(%s)", list[i]->borrower);
-		else printf("\n");
+		printf("\n");
 	}
 }
 
