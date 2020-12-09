@@ -16,7 +16,7 @@ char STATUS[3][20] = {"보관","대여","분실"};
 
 int load_books(struct st_book* list[]);		// 도서정보 읽어오기
 void view_library(struct st_book* list[], int n);	// 현재 서재 정보 출력하기
-void add_book(struct st_book* list[], int *n);		// 도서 추가하기
+void add_book(struct st_book* list[], int* n);		// 도서 추가하기
 void lost_book(struct st_book* list[], int n);	// 도서 분실 처리하기
 void find_books(struct st_book* list[], int n);	// 도서 검색
 void update_book(struct st_book* list[], int n);	// 도서정보 수정하기
@@ -80,7 +80,7 @@ int load_books(struct st_book* list[]){
 	return n;
 }
 
-void view_library(struct st_book * list[], int n){
+void view_library(struct st_book* list[], int n){
 	int i;
 	printf("\n서재 정보입니다. (총 %d권)\n", n);
 	printf("번호 / 분류 / 도서명 / 출판사 / 출간년도 / 상태\n");
